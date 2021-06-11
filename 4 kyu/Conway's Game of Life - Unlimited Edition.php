@@ -34,7 +34,7 @@
         public function compile($indent = 0){
             $this->check_map();
             $size = count($this->map) - $indent;
-            $string = '';
+            $string = [];
             for ($i=$indent; $i < $size; $i++) { 
                 for ($j=$indent; $j < $size; $j++) $string[$i][$j] = (int) $this->map[$i][$j];
             }
